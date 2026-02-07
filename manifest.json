@@ -21,25 +21,25 @@
   "prefer_related_applications": false,
   "icons": [
     {
-      "src": "https://api.dicebear.com/7.x/initials/svg?seed=N&amp;backgroundColor=050505&amp;fontFamily=Serif&amp;bold=true",
+      "src": "https://api.dicebear.com/7.x/initials/svg?seed=N&amp;amp;backgroundColor=050505&amp;amp;fontFamily=Serif&amp;amp;bold=true",
       "sizes": "192x192",
       "type": "image/svg+xml",
       "purpose": "any"
     },
     {
-      "src": "https://api.dicebear.com/7.x/initials/svg?seed=N&amp;backgroundColor=050505&amp;fontFamily=Serif&amp;bold=true",
+      "src": "https://api.dicebear.com/7.x/initials/svg?seed=N&amp;amp;backgroundColor=050505&amp;amp;fontFamily=Serif&amp;amp;bold=true",
       "sizes": "192x192",
       "type": "image/svg+xml",
       "purpose": "maskable"
     },
     {
-      "src": "https://api.dicebear.com/7.x/initials/svg?seed=N&amp;backgroundColor=050505&amp;fontFamily=Serif&amp;bold=true",
+      "src": "https://api.dicebear.com/7.x/initials/svg?seed=N&amp;amp;backgroundColor=050505&amp;amp;fontFamily=Serif&amp;amp;bold=true",
       "sizes": "512x512",
       "type": "image/svg+xml",
       "purpose": "any"
     },
     {
-      "src": "https://api.dicebear.com/7.x/initials/svg?seed=N&amp;backgroundColor=050505&amp;fontFamily=Serif&amp;bold=true",
+      "src": "https://api.dicebear.com/7.x/initials/svg?seed=N&amp;amp;backgroundColor=050505&amp;amp;fontFamily=Serif&amp;amp;bold=true",
       "sizes": "512x512",
       "type": "image/svg+xml",
       "purpose": "maskable"
@@ -47,14 +47,14 @@
   ],
   "screenshots": [
     {
-      "src": "https://images.unsplash.com/photo-1505672678657-cc7037095e60?q=80&amp;w=1000&amp;auto=format&amp;fit=crop",
+      "src": "https://images.unsplash.com/photo-1505672678657-cc7037095e60?q=80&amp;amp;w=1000&amp;amp;auto=format&amp;amp;fit=crop",
       "sizes": "1000x1500",
       "type": "image/jpeg",
       "form_factor": "narrow",
       "label": "Interrogation Room"
     },
     {
-      "src": "https://images.unsplash.com/photo-1533109721025-d1ae2ee8c9eb?q=80&amp;w=1000&amp;auto=format&amp;fit=crop",
+      "src": "https://images.unsplash.com/photo-1533109721025-d1ae2ee8c9eb?q=80&amp;amp;w=1000&amp;amp;auto=format&amp;amp;fit=crop",
       "sizes": "1000x1500",
       "type": "image/jpeg",
       "form_factor": "narrow",
@@ -69,7 +69,7 @@
       "url": "/?action=new-case",
       "icons": [
         {
-          "src": "https://api.dicebear.com/7.x/initials/svg?seed=NC&amp;backgroundColor=050505",
+          "src": "https://api.dicebear.com/7.x/initials/svg?seed=NC&amp;amp;backgroundColor=050505",
           "sizes": "192x192"
         }
       ]
@@ -81,7 +81,7 @@
       "url": "/",
       "icons": [
         {
-          "src": "https://api.dicebear.com/7.x/initials/svg?seed=O&amp;backgroundColor=050505",
+          "src": "https://api.dicebear.com/7.x/initials/svg?seed=O&amp;amp;backgroundColor=050505",
           "sizes": "192x192"
         }
       ]
