@@ -1,4 +1,5 @@
 {
   "name": "Noir: Dark City",
-  "description": "A procedural murder mystery game where you investigate crimes, find clues, and interrogate suspects in a classic noir setting."
+  "description": "A procedural murder mystery game where you investigate crimes, find clues, and interrogate suspects in a classic noir setting.",
+  "requestFramePermissions": []
 }
