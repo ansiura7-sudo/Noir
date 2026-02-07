@@ -4,7 +4,7 @@ import { generateCase } from './services/geminiService';
 import { CaseFile } from './components/CaseFile';
 import { InterrogationRoom } from './components/InterrogationRoom';
 import { MAX_ENERGY, TRANSLATIONS, CONFIG } from './constants';
-import { Search, AlertCircle, Fingerprint, Coffee, Globe, Shield, ShoppingBag, Send, ArrowLeft, Star, Award, Heart } from 'lucide-react';
+import { Search, AlertCircle, Fingerprint, Coffee, Globe, Shield, ShoppingBag, Send, ArrowLeft, Star, Award, Heart, Moon } from 'lucide-react';
 
 export default function App() {
   const [view, setView] = useState<GameView>(GameView.OFFICE);
@@ -91,18 +91,25 @@ export default function App() {
       case GameView.OFFICE:
         return (
           <div className="flex flex-col items-center justify-center h-full text-center p-8 space-y-6 animate-in zoom-in duration-500">
-            <div className="relative">
-              <div className="absolute inset-0 bg-slate-100 blur-3xl opacity-5 rounded-full"></div>
-              <Search size={80} className="text-slate-100 relative z-10" />
+            {/* Styled Logo Container */}
+            <div className="relative group">
+              <div className="absolute inset-0 bg-cyan-500 blur-[60px] opacity-20 group-hover:opacity-30 transition-opacity rounded-full"></div>
+              <div className="relative z-10 w-40 h-40 border-2 border-slate-800 rounded-full flex items-center justify-center overflow-hidden bg-black shadow-2xl">
+                 <div className="absolute inset-0 opacity-10 bg-[url('https://grainy-gradients.vercel.app/noise.svg')]"></div>
+                 <div className="flex flex-col items-center">
+                   <Moon className="text-white mb-2" size={32} />
+                   <div className="w-16 h-1 bg-cyan-400 blur-[2px]"></div>
+                 </div>
+              </div>
             </div>
             
-            <div>
-              <h1 className="text-4xl md:text-5xl font-serif font-bold text-slate-100 mb-2">{t.title}</h1>
-              <p className="text-slate-500 tracking-[0.2em] text-sm uppercase">{t.subtitle}</p>
+            <div className="space-y-1">
+              <h1 className="text-6xl font-bold logo-chrome pb-2">NOIR</h1>
+              <p className="text-slate-400 tracking-[0.4em] text-[10px] uppercase font-serif italic">THE SHADOW CHRONICLES</p>
             </div>
 
-            <div className="flex items-center gap-2 bg-slate-900 border border-slate-800 px-4 py-1.5 rounded-full text-xs font-mono">
-              <Award size={14} className="text-yellow-500" />
+            <div className="flex items-center gap-2 bg-slate-900/50 backdrop-blur border border-slate-800 px-4 py-1.5 rounded-full text-xs font-mono">
+              <Award size={14} className="text-cyan-400" />
               <span className="text-slate-400 uppercase tracking-tighter">{t.xp}:</span>
               <span className="text-white font-bold">{xp}</span>
               <span className="text-slate-600 ml-1">Lvl {detectiveLevel}</span>
@@ -115,7 +122,7 @@ export default function App() {
             <div className="flex flex-col w-full gap-3 mt-4">
               <button 
                 onClick={startNewCase}
-                className="bg-slate-100 hover:bg-white text-black px-10 py-4 rounded-full font-bold text-lg tracking-widest shadow-[0_0_20px_rgba(255,255,255,0.1)] transition-transform hover:scale-105 active:scale-95"
+                className="bg-white hover:bg-slate-100 text-black px-10 py-4 rounded-full font-bold text-lg tracking-widest shadow-[0_0_20px_rgba(255,255,255,0.1)] transition-all hover:scale-105 active:scale-95 border-b-4 border-slate-300"
               >
                 {t.newCase}
               </button>
@@ -280,7 +287,7 @@ export default function App() {
         {/* Status Bar */}
         <div className="flex justify-between items-center mb-4 px-2">
           <div className="flex items-center gap-2 text-slate-500 text-[9px] font-mono tracking-tighter uppercase">
-            <span className="w-1.5 h-1.5 rounded-full bg-rose-600 animate-pulse"></span>
+            <span className="w-1.5 h-1.5 rounded-full bg-cyan-600 animate-pulse"></span>
             {t.liveDb}
           </div>
           
